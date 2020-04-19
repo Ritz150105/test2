@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--
+-->
+  <title>Document</title>
+</head>
+<body>
+  <h1>Debug 練習</h1>
+  <button id="button">押して</button>
+  <p id="message"></p>
+</body>
+</html>
+
+
+<script>
+//console.log(a)
+//debugger
+
+var button = document.getElementById('button')
+button.addEventListener("click", function(e){
+  var message = document.getElementById('message')
+  message.innerText = '押してくれてありがとう！'
+})
+
+</script>
